@@ -1,0 +1,153 @@
+
+
+:root{
+  --blue:#1656B6;
+  --black:#111111;
+  --secondary-black:#011334;
+  --white:#ffffff;
+}
+.contact{
+  padding: 100px 150px;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.contact-content{
+  display: flex;
+}
+.detail{
+  width: 50%;
+}
+.detail-contact{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+}
+.form-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+
+}
+.detail-title{
+  font-size: 36px;
+  color: var(--blue);
+  font-weight: bold;
+}
+.detail-paragraph{
+  width: 400px;
+  font-size: 16px;
+  color: var(--secondary-black);
+}
+.location{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 500px;
+}
+.address,.phone,.mail{
+  display: flex;
+  gap: 20px;
+
+}
+
+.socail-link{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.links{
+  display: flex;
+  gap: 20px;
+}
+
+.form-container{
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid #828282;
+  box-shadow: 0 0 20px 0 #c1c1c1;
+}
+.form-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 100px;
+  gap: 40px;
+}
+.form{
+  display: flex;
+  gap: 20px;
+}
+.form input[type=text]{
+  border: 1px solid #A19898;
+}
+.form input[type=text]:focus{
+  outline:none
+}
+.form textarea:focus{
+  outline:none
+}
+
+.form .name input {
+  width: 222px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+.form input, .form textarea{
+  width: 465px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+.form textarea{
+  height: 140px;
+}
+.contact-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 465px;
+  height: 45px;
+  background-color: var(--blue);
+  border-radius:25px;
+  font-size: 16px;
+  font-weight: 700px;
+  color: var(--white);
+}
+.name{
+  display: flex;
+  gap: 20px;
+}
+.follow{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--blue);
+}
+.socail-link .links{
+ font-size: 25px;
+ color: var(--blue);
+}
+.location i{
+  font-size: 20px;
+  color: var(--blue);
+}
+.address-details, .phone-details,.mail-details{
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--black);
+}
+.address{
+  margin-left: 5px;
+}
