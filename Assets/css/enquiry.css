@@ -1,0 +1,114 @@
+    :root{
+      --blue:#1656B6;
+      --black:#111111;
+      --secondary-black:#011334;
+      --white:#ffffff;
+      --background:#F9F9FF;
+    }
+
+    .enquiry {
+      background-color: var(--background);
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .enquiry-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+      width: 40%;
+    }
+
+    .name, .number, .address, .email, .textarea {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .enquiry-btn {
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn {
+      border: 1px solid var(--blue);
+      border-radius: 5px;
+      padding: 10px 16px;
+      text-align: center;
+      font-size: 16px;
+      color: var(--blue);
+      font-weight: 600;
+    }
+
+    .title {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .enquirt-paragraph {
+      font-size: 18px;
+      width: 100%;
+      max-width: 450px;
+      color: #7C7D82;
+      text-align: center;
+    }
+
+    label {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    input, textarea {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #ceced3;
+      outline: none;
+      padding: 12px;
+      font-size: 18px;
+      background-color: var(--background);
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      input, textarea {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 24px;
+      }
+
+      .enquirt-paragraph {
+        font-size: 16px;
+      }
+
+      .btn {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+    }
+
+    @media(max-width: 1100px) {
+      .enquiry-container {
+        width: 100%;
+      }
+      
+    }
