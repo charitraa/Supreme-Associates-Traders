@@ -1,0 +1,57 @@
+:root{
+  --blue:#1656B6;
+  --black:#111111;
+  --secondary-black:#011334;
+  --white:#ffffff;
+  --background:#F9F9FF;
+}
+
+.main-container{
+  padding: 50px;
+}
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.managing-director{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.member-container{
+  display: flex;
+  gap: 50px;
+}
+.team-members{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+
+}
+.member-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.member-card img{
+  border-radius: 10px;
+}
+.title{
+  font-size: 32px;
+  font-weight: 700;
+}
+.role{
+  font-size: 16px;
+  color: var(--blue);
+}
+.name{
+  font-size: 20px;
+}

@@ -1,9 +1,9 @@
 :root{
-      --blue:#1656B6;
-      --black:#111111;
-      --secondary-black:#011334;
-      --white:#ffffff;
-      --background:#F9F9FF;
+  --blue:#1656B6;
+  --black:#111111;
+  --secondary-black:#011334;
+  --white:#ffffff;
+  --background:#F9F9FF;
 }
 .testimonial{
   padding: 50px;
