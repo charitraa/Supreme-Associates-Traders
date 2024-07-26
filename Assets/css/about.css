@@ -1,0 +1,41 @@
+:root{
+  --blue:#1656B6;
+  --black:#111111;
+  --secondary-black:#011334;
+  --white:#ffffff;
+  --background:#F9F9FF;
+}
+
+.about{
+  padding: 100px;
+}
+.about-conatiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  width: 100%;
+}
+img{
+  width: 550px;
+  object-fit: cover;
+  height: 500px;
+}
+.left,.right{
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.title{
+  font-size: 50px;
+  font-weight: bold;
+}
+.blue-title{
+  font-size: 18px;
+  color: var(--blue);
+  letter-spacing: 15px;
+}
+.paragraph{
+  font-size: 16px;
+  color: #6C6C6C;
+}
