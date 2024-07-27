@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links > li {
+    margin: 10px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    transition: background 0.3s;
+    position: relative;
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0;
+}
+
+.arrow {
+    float: right;
+}
+
+.dropdown {
+    list-style: none;
+    padding: 0;
+    display: none;
+    margin-left: 20px;
+}
+
+.dropdown a {
+    font-weight: normal;
+}
+
+.show-dropdown {
+    display: block;
+}
