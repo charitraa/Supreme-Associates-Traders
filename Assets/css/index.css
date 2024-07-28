@@ -18,7 +18,9 @@ body, html {
 .image img{
   object-fit:cover;
 }
-
+.active-nav{
+  color: var(--blue) !important;
+}
 .navbar {
   position: sticky;
   top: 0;
