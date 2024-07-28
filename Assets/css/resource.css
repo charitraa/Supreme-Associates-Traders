@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 :root{
-      --blue:#1656B6;
-      --black:#111111;
-      --secondary-black:#011334;
-      --white:#ffffff;
-      --background:#F9F9FF;
+  --blue:#1656B6;
+  --black:#111111;
+  --secondary-black:#011334;
+  --white:#ffffff;
+  --background:#F9F9FF;
     }
 .resource{
   padding: 50px;
