@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Animation</title>
+  <link rel="stylesheet" href="../Assets/css/image.css">
+</head>
+
+<body>
+  <div id="main">
+    <div id="hero">
+      <h1>Our Images</h1>
+      <img id="img-1" src="./2580d6c4dabb699d592bb8f234c56094.jpg" alt="first-img">
+      <img id="img-2" src="./30b674dc2955d1cabd1f0545bc58ba40.jpg" alt="">
+      <img id="img-3" src="./36e1378e31e85a82775d76f8ad58abd9.jpg" alt="">
+      <img id="img-4" src="./5534661372dee30cfd344cd3bc92d6c2.jpg" alt="">
+
+      <img id="img-5" src="./e6f2be6ddf42dd2effb0c388bce50bec.jpg" alt="">
+    </div>
+  </div>
+  <div class="image-container" id="photo">
+    <div class="top-frame" id="topFrame">
+      <img src="../Assets/image/about/bus.jpeg" alt="Top Image" id="topImage">
+    </div>
+    <div class="carousel">
+      <div class="carousel-item"><img src="../Assets/image/about/our-mission.jpg" alt="Image 2" class="carousel-image">
+      </div>
+      <div class="carousel-item"><img
+          src="../Assets/image/about/our-vision-inscription-coming-out-260nw-1501515431.webp" alt="Image 3"
+          class="carousel-image"></div>
+      <!-- <div class="carousel-item"><img src="../Assets/image/about/bus.jpeg" alt="Image 1" class="carousel-image">
+      </div> -->
+      <div class="carousel-item"><img src="../Assets/image/about/philophy.jpg" alt="Image 1" class="carousel-image">
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const topFrame = document.getElementById('topFrame');
+      const topImage = document.getElementById('topImage');
+      const carouselImages = document.querySelectorAll('.carousel-image');
+
+      carouselImages.forEach(image => {
+        image.addEventListener('click', () => {
+          const tempSrc = topImage.src;
+          topImage.src = image.src;
+          image.src = tempSrc;
+
+          topImage.classList.add('transition-up');
+          image.classList.add('transition-down');
+
+          setTimeout(() => {
+            topImage.classList.remove('transition-up');
+            image.classList.remove('transition-down');
+          }, 300);
+        });
+      });
+    });
+
+    const image = document.getElementById('photo')
+    const container = document.getElementById('main');
+    container.addEventListener('click', (event) => {
+      image.classList.add('active');
+      image.classList.remove('image-container')
+      container.classList.add('image-container');
+    })
+
+
+  </script>
+</body>
+
+</html>

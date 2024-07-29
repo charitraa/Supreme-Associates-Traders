@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Assets/css/client-display.css">
+  <title>Clients</title>
+</head>
+
+<body>
+  <div class="carousel">
+    <button class="nav left" onclick="prevImage()">&#10094;</button>
+    <img id="mainImage" src="../Assets/image/home/availabe.svg" alt="Main Image">
+    <button class="nav right" onclick="nextImage()">&#10095;</button>
+  </div>
+  <div class="thumbnails">
+    <img id="thumb0" src="../Assets/image/home/availabe.svg" onclick="selectImage(0)" alt="Thumbnail 1" class="active">
+    <img id="thumb1" src="../Assets/image/home/cost.svg" onclick="selectImage(1)" alt="Thumbnail 2">
+    <img id="thumb2" src="../Assets/image/home/good.svg" onclick="selectImage(2)" alt="Thumbnail 3">
+    <img id="thumb3" src="../Assets/image/home/idea.svg" onclick="selectImage(3)" alt="Thumbnail 4">
+    <img id="thumb4" src="../Assets/image/home/Technology (1).svg" onclick="selectImage(4)" alt="Thumbnail 5">
+  </div>
+  <script>
+    let currentImageIndex = 0;
+    const images = ["../Assets/image/home/availabe.svg", "../Assets/image/home/cost.svg", "../Assets/image/home/good.svg", "../Assets/image/home/idea.svg", "../Assets/image/home/Technology (1).svg"];
+    const thumbnails = document.querySelectorAll('.thumbnails img');
+    const mainImage = document.getElementById("mainImage");
+
+    // Check if there's a selected image from the partners page
+    const selectedImage = localStorage.getItem('selectedImage');
+    if (selectedImage) {
+      images.push(selectedImage);
+      mainImage.src = selectedImage;
+      localStorage.removeItem('selectedImage');
+    }
+
+    function updateMainImage(index) {
+      mainImage.style.opacity = 0;
+
+      // Update the active class on thumbnails
+      thumbnails.forEach((thumb, i) => {
+        if (i === index) {
+          thumb.classList.add('active');
+        } else {
+          thumb.classList.remove('active');
+        }
+      });
+
+      setTimeout(() => {
+        mainImage.src = images[index];
+        mainImage.style.opacity = 1;
+      }, 500);
+    }
+
+    function prevImage() {
+      currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : images.length - 1;
+      updateMainImage(currentImageIndex);
+    }
+
+    function nextImage() {
+      currentImageIndex = (currentImageIndex < images.length - 1) ? currentImageIndex + 1 : 0;
+      updateMainImage(currentImageIndex);
+    }
+
+    function selectImage(index) {
+      currentImageIndex = index;
+      updateMainImage(currentImageIndex);
+    }
+  </script>
+</body>
+
+</html>

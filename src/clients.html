@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Assets/css/clients.css">
+  <title>Our Clients</title>
+</head>
+
+<body>
+  <h1>Our Partners</h1>
+  <div class="partners">
+    <img src="../Assets/image/home/availabe.svg" onclick="selectPartnerImage('availabe.svg')" alt="Global">
+    <img src="../Assets/image/home/cost.svg" onclick="selectPartnerImage('cost.svg')" alt="Seko">
+    <img src="../Assets/image/home/good.svg" onclick="selectPartnerImage('good.svg')" alt="Daiki Axis">
+    <img src="../Assets/image/home/idea.svg" onclick="selectPartnerImage('idea.svg')" alt="Initiative">
+    <img src="../Assets/image/home/Technology (1).svg" onclick="selectPartnerImage('Technology (1).svg')"
+      alt="Akash Blowers">
+  </div>
+  <script>
+    function selectPartnerImage(imageName) {
+      localStorage.setItem('selectedImage', `../Assets/image/home/${imageName}`);
+      window.location.href = 'client-display.html';
+    }
+  </script>
+</body>
+
+</html>
