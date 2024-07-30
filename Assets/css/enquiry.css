@@ -34,7 +34,7 @@
     justify-content: center;
   }
 
-  .btn {
+  .enquiry-btn .btn {
     border: 1px solid var(--blue);
     border-radius: 5px;
     padding: 10px 16px;

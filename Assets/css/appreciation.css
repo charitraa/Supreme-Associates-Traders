@@ -27,9 +27,9 @@
   font-weight: bold;
 }
 
-.btn{
+.content .btn{
   font-size: 14px;
-  width: 100px;
+  width: 122px;
   background: var(--blue);
   padding:15px;
   color: white;
