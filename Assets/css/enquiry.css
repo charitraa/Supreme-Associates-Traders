@@ -34,8 +34,9 @@
     justify-content: center;
   }
 
-  .enquiry-btn .btn {
-    border: 1px solid var(--blue);
+  .enquiry-btn .btn a{
+    text-decoration: none;
+    border: 2px solid var(--blue);
     border-radius: 5px;
     padding: 10px 16px;
     text-align: center;

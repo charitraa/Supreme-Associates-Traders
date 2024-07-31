@@ -14,7 +14,9 @@ gap: 30px;
 color: black;
 width: 100%;
 }
-
+img{
+  border-radius: 10px;
+}
 .news-heading {
 font-size: 8vw;
 font-weight: 600;

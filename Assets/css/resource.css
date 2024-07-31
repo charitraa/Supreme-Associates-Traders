@@ -1,81 +1,104 @@
-.resource{
-  padding: 50px;
+.resource {
+    padding: 50px;
+    height: auto;
 }
-.resource-container{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-}
-.resource-paragraph{
-  font-size: 18px ;
-  color: #7C7D82;
-}
-.resource-title{
-  font-size: 32px;
-  font-weight: 700;
-}
-.card{
-  display: flex;
-  gap: 30px;
-}
-.standard-model,.waste-water,.water-treatment,.chlorination-system{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 30px;
-  width: 260px;
-  box-shadow: 0 4px 4px #b8b2b2;
-  padding: 20px;
-  border-radius: 15px;
-}
-.icons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.card-btn{
-  text-align: center;
-}
-.img i{
- color: var(--blue);
- font-size: 30px;
 
+.resource-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
- .name{
-  font-size: 18px;
- }
- .img{
-  background-color: #F3F6FF;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
- }
- .card-title{
-  font-size: 16px;
-  font-weight: 700;
- }
- .card-paragraph{
-  color: #7C7D82;
-  line-height: 25px;
-  font-size: 16px;
- }
- .card-btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
- }
- .card-btn .btn{
-  border: 2px solid var(--blue);
-  padding:10px 15px;
-  border-radius: 5px;
-  font-size: 16px;
-  color: var(--blue);
-  font-weight: 600;
 
- }
+.resource-paragraph {
+    font-size: 18px;
+    color: #7C7D82;
+}
+
+.resource-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.card {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.standard-model, .waste-water, .water-treatment, .chlorination-system {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 300px;
+    box-shadow: 0 4px 4px #b8b2b2;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-btn {
+    text-align: center;
+}
+
+.img i {
+    color: var(--blue);
+    font-size: 30px;
+}
+
+.name {
+    font-size: 18px;
+}
+
+.img {
+    background-color: #F3F6FF;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card-paragraph {
+    color: #7C7D82;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.card-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-btn .btn {
+    border: 2px solid var(--blue);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+}
