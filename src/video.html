@@ -12,6 +12,9 @@
 </head>
 
 <body>
+  <div id="loading-overlay">
+    <img src="../Assets/image/Loading_2.gif" alt="Loading...">
+  </div>
   <div class="navbar">
     <div class="logo">
       <img src="../Assets/image/logo.png" alt="Logo" height="67px" width="129px">
@@ -96,7 +99,7 @@
       <li><a href="#">ENROLL NOW</a></li>
     </ul>
   </nav>
-  <div class="video">
+  <div class="video content">
     <div class="video-container">
       <div class="video-title">
         Video
@@ -143,7 +146,17 @@
       </div>
     </div>
   </div>
+  <script>
+    // script.js
+    window.addEventListener('load', function () {
+      var loadingOverlay = document.getElementById('loading-overlay');
+      var content = document.querySelector('.content');
 
+      loadingOverlay.style.display = 'none';
+      content.style.display = 'block';
+    });
+
+  </script>
 </body>
 
 </html>
