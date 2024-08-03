@@ -1,49 +1,101 @@
-.main-container{
+.main-container {
   padding: 50px;
 }
-.container{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 50px;
-}
-.managing-director{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 50px;
-}
-.member-container{
-  display: flex;
-  gap: 50px;
-}
-.team-members{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 50px;
 
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
 }
-.member-card{
+
+.managing-director,
+.team-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.member-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.member-card {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 15px;
+  max-width: 250px;
 }
-.member-card img{
+
+.member-card img {
   border-radius: 10px;
+  height: 250px;
+  width: 250px;
 }
-.title{
+
+.title {
   font-size: 32px;
   font-weight: 700;
 }
-.role{
+
+.role {
   font-size: 16px;
   color: var(--blue);
 }
-.name{
+
+.name {
   font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 20px;
+  }
+
+  .member-container {
+    gap: 30px;
+  }
+
+  .member-card img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .role, .name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 10px;
+  }
+
+  .member-container {
+    gap: 20px;
+  }
+
+  .member-card img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .role, .name {
+    font-size: 12px;
+  }
 }
