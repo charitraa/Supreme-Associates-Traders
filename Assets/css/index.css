@@ -340,7 +340,7 @@
 
 /* section product */
 
-/* .product{
+.product{
   height: 1300px;
 }
 .products {
@@ -545,10 +545,10 @@ font-size: 14px;
 .products-contentbtn {
 font-size: 16px;
 }
-} */
+}
 /* section blog  */
 
-/* .blog {
+.blog {
   padding: 50px;
 height: auto;
 background: var(--background);
@@ -763,9 +763,9 @@ font-size: 14px;
 .news-contentbtn {
 font-size: 16px;
 }
-} */
+}
 /* section servoce */
-/* .services{
+.services{
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -816,7 +816,7 @@ text-align: center;
 
 /* section testimonial */
 
-/* .testimonial{
+.testimonial{
   background-color: var(--background);
   padding: 50px;
 }
@@ -891,4 +891,4 @@ text-align: center;
   color: var(--blue);
   font-size: 16px;
   font-weight: 600;
-} */
+} 
