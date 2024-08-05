@@ -34,7 +34,7 @@
   border-radius: 20px;
 }
 
-i {
+.star i {
   color: var(--blue);
 }
 

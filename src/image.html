@@ -100,29 +100,6 @@
   <!--Font Awesome CDN-->
   <div class="container">
     <div class="slide">
-      <div class="item"
-        style="background-image: url('../Assets/image/images/0304ebcb-e3e0-4a74-82ba-f717b6730f86.jpg');">
-      </div>
-      <div class="item"
-        style="background-image: url('../Assets/image/images/0576553a-96c5-4f16-b86b-ad47ee5357dc.jpg');">
-
-      </div>
-      <div class="item"
-        style="background-image: url('../Assets/image/images/10636336-1b16-4bf2-9583-51b6bdba87df-768x1024.jpg');">
-
-      </div>
-      <div class="item"
-        style="background-image: url('../Assets/image/images/15c01411-2632-40c5-bcf1-f65ddde71d6b.jpg');">
-
-      </div>
-      <div class="item"
-        style="background-image: url('../Assets/image/images/3b107901-bb3f-41df-96cd-63ecc14b5466.jpg');">
-
-      </div>
-      <div class="item"
-        style="background-image: url('../Assets/image/images/43ea6522-946b-4540-9c2c-97ada2af380a.jpg');">
-
-      </div>
 
     </div>
 
@@ -133,20 +110,7 @@
 
   </div>
 
-  <script>
-    let next = document.querySelector('.next')
-    let prev = document.querySelector('.prev')
-
-    next.addEventListener('click', function () {
-      let items = document.querySelectorAll('.item')
-      document.querySelector('.slide').appendChild(items[0])
-    })
-
-    prev.addEventListener('click', function () {
-      let items = document.querySelectorAll('.item')
-      document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
-    })
-  </script>
+  <script src="../Assets/js/Image.js"></script>
 </body>
 
 </html>
