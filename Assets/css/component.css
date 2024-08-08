@@ -217,6 +217,10 @@
   text-align: left;
   margin-bottom: 20px;
 }
+.address .mail{
+  color: white;
+  text-decoration: none;
+}
 
 .footer-content .section {
   margin: 20px;

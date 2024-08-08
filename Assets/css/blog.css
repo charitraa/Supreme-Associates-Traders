@@ -247,6 +247,10 @@ img{
   font-weight: 600;
   text-transform: uppercase;
 }
+.news-card a{
+  text-decoration: none;
+  color: black;
+}
 
 /* Media query for mobile view */
 @media (max-width: 1200px) {

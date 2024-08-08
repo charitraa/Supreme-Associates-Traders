@@ -126,7 +126,7 @@
       <div class="enquirt-paragraph">
         If you have any further inquiries, please let us know by filling the form below.
       </div>
-      <div class="form">
+      <form class="form" action="">
         <div class="name">
           <label for="name">Organization Name</label>
           <input type="text" id="name" required>
@@ -147,12 +147,12 @@
           <label for="details">Enquiry Details</label>
           <textarea name="details" id="details" required></textarea>
         </div>
-      </div>
-      <div class="enquiry-btn">
-        <button class="btn" type="submit" style="border: none; background-color: var(--background)">
-          <a href="">Submit</a>
-        </button>
-      </div>
+        <div class="enquiry-btn">
+          <button class="btn" type="submit" style="border: none; background-color: var(--background)">
+            <a>Submit</a>
+          </button>
+        </div>
+      </form>
     </div>
   </section>
   <!-- --------------------------form section ends here -------------------------- -->
@@ -179,16 +179,16 @@
             Nepal
           </p>
           <p><i class="fas fa-phone-alt"></i> CallUs: 014439218 <br></p>
-          <p><i class="fas fa-envelope"></i> info@sat.com.np</p>
+          <p><i class="fas fa-envelope"></i> <a class="mail" href="mailto:info@sat.com.np">info@sat.com.np</a></p>
         </div>
 
         <div class="section useful-links">
           <h2>Useful Links</h2>
           <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Our Blog</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./image.html">Images</a></li>
+            <li><a href="./blog.html">Our Blog</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
           </ul>
         </div>
 

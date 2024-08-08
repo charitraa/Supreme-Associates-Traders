@@ -833,6 +833,7 @@ text-align: center;
 /* section testimonial */
 
 .testimonial {
+  background-color: var(--background);
   padding: 50px;
 }
 
