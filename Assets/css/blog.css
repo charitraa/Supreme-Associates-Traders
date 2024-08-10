@@ -1,6 +1,6 @@
 .blog {
 height: auto;
-background: white;
+background: var(--background);
 }
 .fa-solid{
   font-size: 15px;
@@ -129,6 +129,9 @@ background: rgba(250, 230, 224, 1);
 }
 img{
   object-fit: cover;
+}
+.Recent{
+  background: var(--background);
 }
 .recent-container {
   display: flex;
