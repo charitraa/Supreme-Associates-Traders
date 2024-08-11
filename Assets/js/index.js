@@ -1,8 +1,8 @@
 const images = [
-  "../image/home/image.png",
-  "../image/home/image.png",
-  "../Assets/image/home/image.png",
-  "../Assets/image/home/image.png"
+  "image/home/image.png",
+  "image/home/great-flip.jpg",
+  "image/home/plan-01-scaled.jpg",
+  "image/home/water_treatment_Component-01-01-scaled.jpg",
 ];
 
 let currentIndex = 0;

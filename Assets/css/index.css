@@ -1,22 +1,21 @@
-.image img{
-  object-fit:cover;
-}
-.slider {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
+.image img {
+  object-fit: cover;
 }
 
 .slider-container {
   position: relative;
-  width: 100%;
-  height: auto;
+  overflow: hidden;
 }
 
 .slider-container img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 650px;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.slider-container img.active {
+  opacity: 1;
 }
 
 .slider-btn {
@@ -44,6 +43,7 @@
     height: auto; /* Ensure image maintains aspect ratio */
   }
 }
+
 
 
 /* section about */
