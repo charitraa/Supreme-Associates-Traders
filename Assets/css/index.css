@@ -19,12 +19,31 @@
   display: block;
 }
 
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
 @media (max-width: 767px) {
   .slider-container img {
     height: auto; /* Ensure image maintains aspect ratio */
   }
 }
-
 
 
 /* section about */
@@ -346,8 +365,9 @@
 /* section product */
 
 .product{
-  height: 1300px;
+  height: 1200px;
 }
+
 .products {
 height: auto;
 background: white;

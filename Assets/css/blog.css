@@ -155,7 +155,10 @@ img{
   justify-content: center;
   gap: 30px;
 }
-
+.up a, .down a {
+  text-decoration: none;
+  color: black;
+}
 .down {
   display: flex;
   justify-content: center;
