@@ -27,6 +27,25 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.card {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.card > div {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card > div:hover {
+  transform: translateY(-10px); /* Moves the card up by 10px */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a larger shadow on hover */
+}
+
 
 .standard-model, .waste-water, .water-treatment, .chlorination-system {
     display: flex;

@@ -28,6 +28,11 @@
     gap: 25px;
     width: 100%;
   }
+  input:focus, textarea:focus {
+    border-color: blue;
+    outline: none; /* This removes the default focus outline */
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Optional: Adds a subtle blue shadow */
+}
 
   .enquiry-btn {
     display: flex;
