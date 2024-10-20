@@ -273,7 +273,7 @@
 
 .content-paragraph {
   font-size: 16px;
-  color: #BDC1CA;
+  color: #747478;
   line-height: 25px;
   text-align: center; /* Center align paragraphs */
 }
@@ -658,7 +658,7 @@ font-weight: 600;
 }
 
 .news-content .news-content-paragraph {
-color: rgba(124, 125, 130, 1);
+color: #747478;
 font-size: 3.5vw;
 overflow: hidden;
 height: 81px;
