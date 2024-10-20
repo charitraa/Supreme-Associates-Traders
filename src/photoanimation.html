@@ -4,262 +4,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+  <title>Responsive Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css">
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-      padding: 40px;
-      background-image: linear-gradient(#e8f0ff 0%, white 52.08%);
-      color: #0e3481;
-      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
     }
 
-    .header .lead {
-      max-width: 620px;
+    /* Gallery styles */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      padding: 30px;
     }
 
-    .inline-gallery-container {
-      width: 700px;
-      height: 500px;
-      position: relative;
+    .gallery img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
     }
 
-    .lightGallery-captions h4 {
-      transform: translate3d(60px, 0, 0px);
-      opacity: 0;
-      transition: transform 0.4s ease-in-out, opacity 0.4s ease-in;
+    /* Responsive design */
+    @media screen and (max-width: 1200px) {
+      .gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
 
-    .lightGallery-captions p {
-      transform: translate3d(-60px, 0, 0px);
-      opacity: 0;
-      transition: transform 0.4s ease-in-out, opacity 0.4s ease-in;
+    @media screen and (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
-    .lg-current .lightGallery-captions h4,
-    .lg-current .lightGallery-captions p {
-      transform: translate3d(0, 0, 0px);
-      opacity: 1;
-      transition-delay: 500ms;
-    }
-
-    .lg-slide-progress .lightGallery-captions h4 {
-      transform: translate3d(-60px, 0, 0px);
-      opacity: 0;
-    }
-
-    .lg-slide-progress .lightGallery-captions p {
-      transform: translate3d(60px, 0, 0px);
-      opacity: 0;
+    @media screen and (max-width: 480px) {
+      .gallery {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="header d-flex flex-column align-items-center">
-    <h1 class="display-6 mt-3 mb-0">lightGallery</h1>
-    <p class="lead mt-2 mb-4">
-      lightGallery is a feature-rich, modular JavaScript gallery plugin for building beautiful image and video galleries
-      for the web and the mobile
-    </p>
-    <a class="btn mb-5 btn-outline-primary" href="https://github.com/sachinchoolur/lightGallery" target="_blank">View on
-      GitHub</a>
-  </div>
-  <div class="d-flex justify-content-center">
-    <div id="inline-gallery-container" class="inline-gallery-container"></div>
-  </div>
+  <div id="gallery" class="gallery"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+  <script>
+    // Define the gallery element
+    const gallery = document.getElementById("gallery");
+
+    // Array of image URLs
+    const images = [
+      "image/images/0304ebcb-e3e0-4a74-82ba-f717b6730f86.jpg",
+      "image/images/0576553a-96c5-4f16-b86b-ad47ee5357dc.jpg",
+      "image/images/10636336-1b16-4bf2-9583-51b6bdba87df-768x1024.jpg",
+      "image/images/15c01411-2632-40c5-bcf1-f65ddde71d6b.jpg",
+      "image/images/3b107901-bb3f-41df-96cd-63ecc14b5466.jpg",
+      "image/images/43ea6522-946b-4540-9c2c-97ada2af380a.jpg",
+      "image/images/5e653c8b-9234-458f-b780-63b73968c892.jpg",
+      "image/images/681406c9-bbec-404c-b9ef-b1e85576ce1c.jpg",
+      "image/images/78a2d185-e92d-4731-8ab2-1ff112439e83.jpg",
+      "image/images/92b1ac46-44f0-4e42-96fd-374f7832be19.jpg",
+      "image/images/a5d0fb3a-50fd-48d9-9e42-c05254d36aa2.jpg",
+      "image/images/ad8f3651-e236-49d3-b931-139ba1636652.jpg",
+      "image/images/c80be2fa-97e4-42bc-ac2b-12c3bf94317b.jpg",
+      "image/images/chlorine-tank.jpg",
+      "image/images/d478a113-24cf-45e8-950c-580c7af5176a.jpg",
+      "image/images/ddd9fc86-f051-4a33-b9b3-6faf5a3510b6-1024x768.jpg",
+      "image/images/f6b6cca8-1dd8-49e6-bffe-a6504f8a5eb7-1024x769.jpg",
+      "image/images/image-12-1024x576.jpg",
+      "image/images/image.jpg",
+      "image/images/image_water.jpg",
+      "image/images/image_water_treatment.jpg",
+      "image/images/images-2.jpg",
+      "image/images/img-.jpg",
+      "image/images/IMG-3497b3256567413e32cd7c422b76e149-V-1024x768.jpg",
+      "image/images/ion-exchange-filter-1-1024x771.jpg",
+      "image/images/iron-removial-1024x605.jpg",
+      "image/images/sat-testi.jpg",
+      "image/images/SS-vessel-1024x768.jpg",
+      "image/images/sumeru-hospital-1024x768.jpeg",
+      "image/images/UNADJUSTEDNONRAW_thumb_20f.jpg",
+      "image/images/Untitled-1-2.jpg",
+      "image/images/videoframe_5499.png",
+      "image/images/WhatsApp-Image-2023-05-23-at-11.50.06-576x1024.jpeg",
+      "image/images/WhatsApp-Image-2023-05-23-at-17.40.39-768x1024.jpeg"
+    ];
+
+    // Add images dynamically to the gallery
+    images.forEach(image => {
+      const img = document.createElement("img");
+      img.src = image;
+      gallery.appendChild(img);
+    });
+
+    // Initialize lightGallery plugin
+    lightGallery(gallery, {
+      controls: true,
+      counter: false,
+      download: true,
+      plugins: []
+    });
+  </script>
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-<!-- Import lightGallery and its plugins -->
-<script src="js/lightgallery.min.js"></script>
-<script src="js/plugins/lg-thumbnail.umd.js"></script>
-<script src="js/plugins/lg-zoom.umd.js"></script>
-
-<script>
-
-  const $lgContainer = document.getElementById("inline-gallery-container");
-
-  const inlineGallery = lightGallery($lgContainer, {
-    container: $lgContainer,
-    dynamic: true,
-    // Turn off hash plugin in case if you are using it
-    // as we don't want to change the url on slide change
-    hash: false,
-    // Do not allow users to close the gallery
-    closable: false,
-    // Add maximize icon to enlarge the gallery
-    showMaximizeIcon: true,
-    // Append caption inside the slide item
-    // to apply some animation for the captions (Optional)
-    appendSubHtmlTo: ".lg-item",
-    // Delay slide transition to complete captions animations
-    // before navigating to different slides (Optional)
-    // You can find caption animation demo on the captions demo page
-    slideDelay: 400,
-    plugins: [lgZoom, lgThumbnail],
-    dynamicEl: [
-      {
-        src:
-          "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
-        responsive:
-          "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800",
-        thumb:
-          "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80",
-        subHtml: `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@dann">Dan</a></h4>
-                    <p>Published on November 13, 2018</p>
-                </div>`
-      },
-      {
-        src:
-          "https://images.unsplash.com/photo-1473876988266-ca0860a443b8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
-        responsive:
-          "https://images.unsplash.com/photo-1473876988266-ca0860a443b8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1473876988266-ca0860a443b8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800",
-        thumb:
-          "https://images.unsplash.com/photo-1473876988266-ca0860a443b8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80",
-        subHtml: `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@kylepyt">Kyle Peyton</a></h4>
-                    <p>Published on September 14, 2016</p>
-                </div>`
-      },
-      {
-        src:
-          "https://images.unsplash.com/photo-1588953936179-d2a4734c5490?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1400&q=80",
-        responsive:
-          "https://images.unsplash.com/photo-1588953936179-d2a4734c5490?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1588953936179-d2a4734c5490?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80 800",
-        thumb:
-          "https://images.unsplash.com/photo-1588953936179-d2a4734c5490?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80",
-        subHtml: `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@jxnsartstudio">Garrett Jackson</a></h4>
-                    <p>Published on May 8, 2020</p>
-                </div>`
-      },
-      {
-        src:
-          "https://images.unsplash.com/photo-1591634616938-1dfa7ee2e617?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
-        responsive:
-          "https://images.unsplash.com/photo-1591634616938-1dfa7ee2e617?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1591634616938-1dfa7ee2e617?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800",
-        thumb:
-          "https://images.unsplash.com/photo-1591634616938-1dfa7ee2e617?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80",
-        subHtml: `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@brookecagle">Brooke Cagle</a></h4>
-                    <p>Description of the slide 4</p>
-                </div>`
-      },
-      {
-        src:
-          "https://images.unsplash.com/photo-1543059509-6d53dbee1728?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1400&q=80",
-        responsive:
-          "https://images.unsplash.com/photo-1543059509-6d53dbee1728?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1543059509-6d53dbee1728?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80 800",
-        thumb:
-          "https://images.unsplash.com/photo-1543059509-6d53dbee1728?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80",
-        subHtml: `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@charlespostiaux">Charles Postiaux</a></h4>
-                    <p>Published on November 24, 2018</p>
-                </div>`
-      },
-      {
-        src:
-          "https://images.unsplash.com/photo-1609902726285-00668009f004?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1400&q=80",
-        responsive:
-          "https://images.unsplash.com/photo-1609902726285-00668009f004?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1609902726285-00668009f004?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80 800",
-        thumb:
-          "https://images.unsplash.com/photo-1609902726285-00668009f004?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80",
-        subHtml: `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@bruno_adam">Bruno Adam</a></h4>
-                    <p>Published on January 6, 2021</p>
-                </div>`
-      },
-      {
-        src:
-          "https://images.unsplash.com/photo-1573007974656-b958089e9f7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
-        responsive:
-          "https://images.unsplash.com/photo-1573007974656-b958089e9f7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1573007974656-b958089e9f7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800",
-        thumb:
-          "https://images.unsplash.com/photo-1573007974656-b958089e9f7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80",
-        subHtml: `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@sigmund">Sigmund</a></h4>
-                    <p>Published on November 6, 2019</p>
-                </div>`
-      },
-      {
-        src:
-          "https://images.unsplash.com/photo-1579406842270-ea87c39a8a12?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
-        responsive:
-          "https://images.unsplash.com/photo-1579406842270-ea87c39a8a12?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1579406842270-ea87c39a8a12?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800",
-        thumb:
-          "https://images.unsplash.com/photo-1579406842270-ea87c39a8a12?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80",
-        subHtml: `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@chow_parij">Parij Borgohain</a></h4>
-                    <p>Published on January 19, 2020</p>
-                </div>`
-      },
-      {
-        src:
-          "https://images.unsplash.com/photo-1598911543663-37d77962beb1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1400&q=80",
-        responsive:
-          "https://images.unsplash.com/photo-1598911543663-37d77962beb1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1598911543663-37d77962beb1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80 800",
-        thumb:
-          "https://images.unsplash.com/photo-1598911543663-37d77962beb1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80",
-        subHtml: `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@inespiazzese">Ines Piazzese</a></h4>
-                    <p>Published on September 1, 2020</p>
-                </div>`
-      },
-      {
-        src:
-          "https://images.unsplash.com/photo-1560885673-2cdc12600ec8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1400&q=80",
-        responsive:
-          "https://images.unsplash.com/photo-1560885673-2cdc12600ec8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1560885673-2cdc12600ec8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80 800",
-        thumb:
-          "https://images.unsplash.com/photo-1560885673-2cdc12600ec8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80",
-        subHtml: `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@rdsaunders">Richard Saunders</a></h4>
-                    <p>Published on June 19, 2019</p>
-                </div>`
-      },
-      {
-        src:
-          "https://images.unsplash.com/photo-1571292064306-669f0e758231?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
-        responsive:
-          "https://images.unsplash.com/photo-1571292064306-669f0e758231?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1571292064306-669f0e758231?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800",
-        thumb:
-          "https://images.unsplash.com/photo-1571292064306-669f0e758231?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80",
-        subHtml: `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@jalanmeier">J. Meier</a></h4>
-                    <p>Published on October 17, 2019</p>
-                </div>`
-      },
-      {
-        src:
-          "https://images.unsplash.com/photo-1601935111741-ae98b2b230b0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1400&q=80",
-        responsive:
-          "https://images.unsplash.com/photo-1601935111741-ae98b2b230b0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1601935111741-ae98b2b230b0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80 800",
-        thumb:
-          "https://images.unsplash.com/photo-1601935111741-ae98b2b230b0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80",
-        subHtml: `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@brookecagle">Brooke Cagle</a></h4>
-                    <p>Published on October 6, 2020</p>
-                </div>`
-      }
-    ],
-
-    // Completely optional
-    // Adding as the codepen preview is usually smaller
-    thumbWidth: 60,
-    thumbHeight: "40px",
-    thumbMargin: 4
-  });
-
-  setTimeout(() => {
-    inlineGallery.openGallery();
-  }, 200);
-
-</script>
 
 </html>
