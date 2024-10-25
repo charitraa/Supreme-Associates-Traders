@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!------------------- link the css or plugin the css----------- -->
-  <link rel="stylesheet" href="../Assets/css/video.css">
+  <link rel="stylesheet" href="../Assets/css/blog-describe.css">
   <link rel="stylesheet" href="../Assets/css/component.css">
   <!-- ------------- title of the page----------- -->
-  <title>Video</title>
+  <title>Treatment of Wastewater in Teku Hospital</title>
   <!-- -------------import the font----------- -->
   <script src="https://kit.fontawesome.com/49b6b027f2.js" crossorigin="anonymous"></script>
   <!-- ------------- icon of the page----------- -->
@@ -29,12 +29,11 @@
 </head>
 
 <body>
-  <div id="loading-overlay">
-    <img src="image/Loading_2.gif" alt="Loading...">
-  </div>
   <div class="navbar">
     <div class="logo">
-      <img src="image/logo.png" alt="Logo" height="67px" width="129px">
+      <a href="./index.html">
+        <img src="image/logo.png" alt="Logo" height="67px" width="129px">
+      </a>
     </div>
     <div class="menus">
       <a href="./index.html">Home</a>
@@ -50,20 +49,21 @@
       <div class="dropdown">
         <a href="./product.html" class="dropbtn">Product <i class="fa fa-chevron-down"></i></a>
         <div class="dropdown-content">
-          <a href="#treatment">Treatment</a>
-          <a href="#removal">Removal</a>
-          <a href="#system">System</a>
-          <a href="#component">Component</a>
+          <a href="#treatment">Iron removal Plant</a>
+          <a href="#removal">Ammonia Removal Plant</a>
+          <a href="#system">Waste Water Treatment Plant</a>
+          <a href="#component">Effluent Treatment Plant</a>
+          <a href="">Sewage Treatment plant</a>
         </div>
       </div>
       <div class="dropdown">
-        <a class="active-nav" href="javascript:;" class="dropbtn">Gallery <i class="fa fa-chevron-down"></i></a>
+        <a href="javascript:;" class="dropbtn">Gallery <i class="fa fa-chevron-down"></i></a>
         <div class="dropdown-content">
           <a href="./image.html">Photos</a>
           <a href="./video.html">Videos</a>
         </div>
       </div>
-      <a href="./blog.html">Blog</a>
+      <a class="active-nav" href="./blog.html">Blog</a>
       <a href="#clients">Our Clients</a>
       <a href="#partner">Partners</a>
       <a href="./resource.html">Resources</a>
@@ -76,7 +76,7 @@
       <i class="fa fa-bars"></i>
     </div>
   </div>
-
+  <!-- --------------------navugation for mobile view port ----------- -->
   <nav class="navbar-mobile">
     <div class="logo-mobile">
       <img src="image/logo.png" alt=" Logo" height="67px" width="129px">
@@ -116,54 +116,26 @@
       <li><a href="#">ENROLL NOW</a></li>
     </ul>
   </nav>
-  <div class="video content">
-    <div class="video-container">
-      <div class="video-title">
-        Video
+  <div class="main-conatiner">
+    <div class="container">
+      <h1 class="title">TREATMENT OF WASTEWATER IN TEKU HOSPITAL</h1>
+      <p class="date">August 20, 2022</p>
+      <div class="image-container">
+        <img src="image/blog/treatment-of-waste-water.jpg" alt="Wastewater treatment process">
       </div>
-      <Center>The Video is unavailable</Center>
-      <!-- <div class="video-content">
-        <div class="video-play">
-          <video width="100%" height="auto" controls>
-            <source src="image/video/yt1s.com - Thanks For Watching Outro Free Download.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="video-play">
-          <video width="100%" height="auto" controls>
-            <source src="image/video/yt1s.com - Thanks For Watching Outro Free Download.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="video-play">
-          <video width="100%" height="auto" controls>
-            <source src="image/video/yt1s.com - Thanks For Watching Outro Free Download.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-      <div class="video-content">
-        <div class="video-play">
-          <video width="100%" height="auto" controls>
-            <source src="image/video/yt1s.com - Thanks For Watching Outro Free Download.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="video-play">
-          <video width="100%" height="auto" controls>
-            <source src="image/video/yt1s.com - Thanks For Watching Outro Free Download.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="video-play">
-          <video width="100%" height="auto" controls>
-            <source src="image/video/yt1s.com - Thanks For Watching Outro Free Download.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div> -->
+      <p class="content">
+        Health Environment and Climate Action Foundation (Hecaf360) is one of the renowned organisations which is
+        committed
+        to clean, green and environmentally safe healthcare. In the month of June, it conducted a demonstration of
+        electrochemical treatment technology and evaluation test for the treatment of hospital wastewater in Teku
+        hospital.
+        Our Supreme Associates Traders, leader in water and wastewater treatment, sponsored Hecaf360 by providing
+        different
+        facilities required during the treatment process.
+      </p>
     </div>
   </div>
+
   <section class="footer">
     <div class="footer-container">
       <div class="footer-content">
@@ -217,17 +189,6 @@
       </div>
     </div>
   </section>
-  <script>
-    // script.js
-    window.addEventListener('load', function () {
-      var loadingOverlay = document.getElementById('loading-overlay');
-      var content = document.querySelector('.content');
-
-      loadingOverlay.style.display = 'none';
-      content.style.display = 'block';
-    });
-
-  </script>
   <script src="../Assets/js/component.js"></script>
 </body>
 
