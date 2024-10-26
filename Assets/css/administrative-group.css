@@ -1,15 +1,15 @@
-.main-container {
+.administrative-group {
   padding: 50px;
 }
 
-.container {
+.administrative-group .container {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 50px;
 }
 
-.managing-director {
+.administrative-group .managing-director {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,34 +17,34 @@
   gap: 50px;
 }
 
-.team-image img{
+.administrative-group .team-image img{
   object-fit: cover;
   width: 1100px;
   height: 700px;
 }
 
-.title {
+.administrative-group .title {
   font-size: 32px;
   font-weight: 700;
 }
 
 
 @media (max-width: 768px) {
-  .main-container {
+  .administrative-group .main-container {
     padding: 20px;
   }
 
-  .title {
+  .administrative-group .title {
     font-size: 28px;
   }
 
 }
 
 @media (max-width: 480px) {
-  .main-container {
+  .administrative-group .main-container {
     padding: 10px;
   }
-  .title {
+  .administrative-group .title {
     font-size: 24px;
   }
 

@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-  .enquiry-container {
+  .enquiry .enquiry-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,14 +15,14 @@
     width: 40%;
   }
 
-  .name, .number, .address, .email, .textarea {
+  .enquiry .name, .enquiry .number, .enquiry .address, .enquiry .email, .enquiry .textarea {
     display: flex;
     gap: 10px;
     flex-direction: column;
     width: 100%;
   }
 
-  .form {
+  .enquiry .form {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -34,12 +34,12 @@
     box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Optional: Adds a subtle blue shadow */
 }
 
-  .enquiry-btn {
+  .enquiry .enquiry-btn {
     display: flex;
     justify-content: center;
   }
 
-  .enquiry-btn .btn a{
+  .enquiry .enquiry-btn .btn a{
     text-decoration: none;
     border: 2px solid var(--blue);
     border-radius: 5px;
@@ -51,12 +51,12 @@
     cursor: pointer;
   }
 
-  .title {
+  .enquiry .title {
     font-size: 32px;
     font-weight: 700;
   }
 
-  .enquirt-paragraph {
+  .enquiry .enquirt-paragraph {
     font-size: 18px;
     width: 100%;
     max-width: 450px;
@@ -64,12 +64,12 @@
     text-align: center;
   }
 
-  label {
+  .enquiry label {
     font-size: 16px;
     font-weight: 600;
   }
 
-  input, textarea {
+  .enquiry input, textarea {
     width: 100%;
     border-radius: 10px;
     border: 2px solid #ceced3;
@@ -79,34 +79,34 @@
     background-color: var(--background);
   }
 
-  textarea {
+  .enquiry textarea {
     height: 120px;
   }
 
   /* Responsive Styles */
   @media (max-width: 768px) {
-    input, textarea {
+  .enquiry  input, .enquiry textarea {
       max-width: 100%;
     }
   }
 
   @media (max-width: 480px) {
-    .title {
+    .enquiry .title {
       font-size: 24px;
     }
 
-    .enquirt-paragraph {
+    .enquiry .enquirt-paragraph {
       font-size: 16px;
     }
 
-    .btn {
+    .enquiry .btn {
       padding: 8px 12px;
       font-size: 14px;
     }
   }
 
   @media(max-width: 1100px) {
-    .enquiry-container {
+    .enquiry .enquiry-container {
       width: 100%;
     }
     

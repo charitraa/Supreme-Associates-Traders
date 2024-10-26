@@ -2,7 +2,7 @@
   padding: 50px;
 }
 
-.testimonial-container {
+.testimonial .testimonial-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,19 +11,19 @@
   animation: fadeInUp 1s ease-in-out;
 }
 
-.arrow {
+.testimonial .arrow {
   display: flex;
   gap: 30px;
 }
 
-.testimonial-content {
+.testimonial .testimonial-content {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.testimonial-card {
+.testimonial .testimonial-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,25 +35,25 @@
   border-radius: 20px;
 }
 
-.star i {
+.testimonial .star i {
   color: var(--blue);
 }
 
 
-.paragraph {
+.testimonial .paragraph {
   font-weight: 700;
 }
 
-.title {
+.testimonial .title {
   font-weight: 700;
 }
 
-.name {
+.testimonial .name {
   font-size: 24px;
   font-weight: 700;
 }
 
-.carousel {
+.testimonial .carousel {
   position: relative;
   width: 45%;
   max-width: 1000px;
@@ -64,11 +64,11 @@
 }
 
 
-.carousel-track {
+.testimonial .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-.testimonial-card {
+.testimonial .testimonial-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,7 +87,7 @@
 }
 
 
-    .testimonial-card img {
+    .testimonial .testimonial-card img {
       width: 60px;
       height: 60px;
       border-radius: 50%;
@@ -98,7 +98,7 @@
       /* Adding white border to make the image stand out */
     }
 
-    .testimonial-content {
+    .testimonial .testimonial-content {
       font-size: 16px;
       color: #333;
       margin: 30px 0 20px 0;
@@ -107,12 +107,12 @@
       line-height: 1.6;
     }
 
-    .testimonial-name {
+    .testimonial .testimonial-name {
       font-weight: bold;
       margin-top: 10px;
     }
 
-.carousel-button {
+.testimonial .carousel-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -124,68 +124,68 @@
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-.carousel-button:hover {
+.testimonial .carousel-button:hover {
   transform: scale(1.1);
 }
 
-.carousel-button.prev {
+.testimonial .carousel-button .prev {
   left: 10px;
   animation: slideInLeft 0.8s ease;
 }
 
-.carousel-button.next {
+.testimonial .carousel-button .next {
   right: 10px;
   animation: slideInRight 0.8s ease;
 }
 
-    .carousel-button:focus {
+    .testimonial .carousel-button:focus {
       outline: none;
     }
 
-    .testimonial-container {
+    .testimonial .testimonial-container {
       text-align: center;
       margin-bottom: 20px;
     }
 
-    .testimonial-container .title {
+    .testimonial .testimonial-container  .title {
       font-size: 2rem;
       margin-bottom: 10px;
     }
 
-    .testimonial-container .paragraph {
+    .testimonial .testimonial-container  .paragraph {
       font-size: 1rem;
       color: #555;
     }
 
-    .star-rating {
+    .testimonial .star-rating {
       position: absolute;
       top: 20px;
       right: 20px;
     }
 
-.star-rating i {
+.testimonial .star-rating i {
   color: #FFD700;
   font-size: 18px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0 .3s ease-in-out;
 }
 
-.star-rating i:hover {
+.testimonial .star-rating i:hover {
   transform: scale(1.3);
 }
 
     /* Name and Role */
-    .testimonial-name {
+    .testimonial .testimonial-name {
       font-weight: bold;
       margin-top: 20px;
     }
 
-    .testimonial-role {
+    .testimonial .testimonial-role {
       color: #777;
       font-size: 14px;
     }
 
     /* Testimonial Label */
-    .testimonial-label {
+    .testimonial .testimonial-label {
       display: inline-block;
       background-color: #f0f0f0;
       padding: 5px 10px;
@@ -197,59 +197,59 @@
 
     /* Happy Customer Section Styles */
 
-.happy-customer {
+.testimonial .happy-customer {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px 20px;
 }
 
-.happy-customer-title {
+.testimonial .happy-customer-title {
   margin-bottom: 30px;
   text-align: center;
 }
 
-.happy-customer-title h2 {
-  font-size: 2.5rem;
+.testimonial .happy-customer-title h2 {
+  font-size: 2 .5rem;
   color: #333;
   font-weight: bold;
   margin: 0;
 }
 
-.customer-images {
+.testimonial .customer-images {
   display: flex;
   gap: 30px; /* Increased gap between images */
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.image-wrapper {
+.testimonial .image-wrapper {
   width: 300px;
   height: 400px;
   overflow: hidden;
   border-radius: 12px;
   border: 3px solid #ddd;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0 .1);
+  transition: transform 0 .3s ease-in-out;
 }
-.image-wrapper img {
+.testimonial .image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.image-wrapper:hover {
-  transform: scale(1.1) rotate(2deg);
-  transition: transform 0.3s ease-in-out;
+.testimonial .image-wrapper:hover {
+  transform: scale(1 .1) rotate(2deg);
+  transition: transform 0 .3s ease-in-out;
 }
 
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
-  .happy-customer-title h2 {
+  .testimonial .happy-customer-title h2 {
     font-size: 2rem;
   }
 
-  .image-wrapper {
+  .testimonial .image-wrapper {
     width: 180px;
     height: 100px;
   }
@@ -257,16 +257,16 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .arrow {
+  .testimonial .arrow {
     justify-content: center;
   }
 
-  .testimonial-card {
+  .testimonial .testimonial-card {
     width: 100%;
     max-width: 100%;
   }
 
-  .paragraph {
+  .testimonial .paragraph {
     text-align: center;
   }
 }

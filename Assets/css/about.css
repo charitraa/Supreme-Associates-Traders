@@ -3,7 +3,7 @@
     background-color: var(--background);
   }
 
-  .about-container {
+.about .about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,38 +11,38 @@
     width: 100%;
   }
 
-  img {
+.about  img {
     width: 100%;
     object-fit: cover;
     height: auto;
     max-width: 550px;
   }
 
-  .left, .right {
+.about  .left, .about .right {
     display: flex;
     gap: 30px;
     flex-direction: column;
   }
 
-  .title {
+.about  .title {
     font-size: 32px;
     font-weight: bold;
   }
 
-  .blue-title {
+.about  .blue-title {
     font-size: 18px;
     color: var(--blue);
     letter-spacing: 2px;
   }
 
-  .paragraph {
+.about  .paragraph {
     font-size: 16px;
     color: #6C6C6C;
     line-height: 25px;
   }
 
   @media (min-width: 768px) {
-    .about-container {
+.about .about-container {
       flex-direction: row;
       justify-content: center;
       align-items: flex-start;
@@ -50,11 +50,11 @@
       padding: 100px;
     }
 
-    .title {
+  .about  .title {
       font-size: 50px;
     }
 
-    .blue-title {
+  .about  .blue-title {
       letter-spacing: 15px;
     }
   }

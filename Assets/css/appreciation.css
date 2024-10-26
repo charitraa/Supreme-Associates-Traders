@@ -1,8 +1,8 @@
-.main-container {
+.appreciation {
   padding: 50px;
 }
 
-.container {
+.appreciation .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,27 +10,27 @@
   gap: 50px;
 }
 
-.content-container {
+.appreciation .content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-.image {
+.appreciation .image {
   width: 100%;
   max-width: 400px;
   height: auto;
 }
 
-.content {
+.appreciation .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-.paragraph {
+.appreciation .paragraph {
   font-size: 18px;
   color: #3B3C4A;
   width: 100%;
@@ -38,12 +38,12 @@
   text-align: center;
 }
 
-.title {
+.appreciation .title {
   font-size: 32px;
   font-weight: bold;
 }
 
-.content .btn {
+.appreciation .content .appreciation .btn {
   font-size: 14px;
   width: 122px;
   background: var(--blue);
@@ -55,22 +55,22 @@
 
 /* Media Queries */
 @media (min-width: 768px) {
-  .container {
+  .appreciation .container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 
-  .content-container {
+  .appreciation .content-container {
     flex-direction: row;
     align-items: flex-start;
   }
 
-  .paragraph {
+  .appreciation .paragraph {
     text-align: left;
   }
 
-  .content {
+  .appreciation .content {
     align-items: flex-start;
   }
 }
