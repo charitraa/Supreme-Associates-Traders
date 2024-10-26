@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="Assets/css/about.css">
   <link rel="stylesheet" href="Assets/css/administrative-group.css">
   <link rel="stylesheet" href="Assets/css/blog.css">
+  <link rel="stylesheet" href="Assets/css/blog-describe.css">
   <link rel="stylesheet" href="Assets/css/contact.css">
   <link rel="stylesheet" href="Assets/css/appreciation.css">
   <link rel="stylesheet" href="Assets/css/enquiry.css">

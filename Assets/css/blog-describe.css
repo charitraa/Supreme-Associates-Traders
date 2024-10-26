@@ -1,4 +1,4 @@
-.container {
+.blog-describe .container {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -9,7 +9,7 @@
     gap: 20px;
 }
 
-.title {
+.blog-describe .title {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -17,22 +17,22 @@
     color: #333;
 }
 
-.date {
+.blog-describe .date {
     font-size: 14px;
     color: #666;
     margin-bottom: 20px;
 }
 
-.image-container {
+.blog-describe .image-container {
     margin-bottom: 20px;
 }
 
-.image-container img {
+.blog-describe .image-container img {
     width: 100%;
     border-radius: 8px;
 }
 
-.content {
+.blog-describe .content {
     font-size: 18px;
     line-height: 1.6;
     color: #333;

@@ -1,6 +1,8 @@
   <div class="navbar">
     <div class="logo">
-      <img src="image/logo.png" alt="Logo" height="67px" width="129px">
+      <a href="./index.php">
+        <img src="image/logo.png" alt="Logo" height="67px" width="129px">
+      </a>
     </div>
     <div class="menus">
       <a href="./index.php">Home</a>
