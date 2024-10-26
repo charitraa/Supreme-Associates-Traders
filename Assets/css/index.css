@@ -982,12 +982,12 @@ text-align: center;
   transform: scale(1.1);
 }
 
-.testimonial .carousel-button .prev {
+.testimonial  .prev {
   left: 10px;
   animation: slideInLeft 0.8s ease;
 }
 
-.testimonial .carousel-button .next {
+.testimonial .next {
   right: 10px;
   animation: slideInRight 0.8s ease;
 }
