@@ -2,24 +2,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!------------------- link the css or plugin the css----------- -->
-  <link rel="stylesheet" href="../Assets/css/about.css">
-    <link rel="stylesheet" href="../Assets/css/administrative-group.css">
-  <link rel="stylesheet" href="../Assets/css/blog.css">
-  <link rel="stylesheet" href="../Assets/css/contact.css">
-  <link rel="stylesheet" href="../Assets/css/appreciation.css">
-  <link rel="stylesheet" href="../Assets/css/enquiry.css">
-  <link rel="stylesheet" href="../Assets/css/component.css">
-  <link rel="stylesheet" href="../Assets/css/footer.css">
-  <link rel="stylesheet" href="../Assets/css/testimonial.css">
-  <link rel="stylesheet" href="../Assets/css/video.css">
-  <link rel="stylesheet" href="../Assets/css/resource.css">
-  <link rel="stylesheet" href="../Assets/css/index.css">
-  <link rel="stylesheet" href="../Assets/css/product.css">
-  <link rel="stylesheet" href="../Assets/css/image.css">
-  <link rel="stylesheet" href="../Assets/css/about.css">
-  <link rel="stylesheet" href="../Assets/css/administrative-group.css">
+  <link rel="stylesheet" href="Assets/css/about.css">
+  <link rel="stylesheet" href="Assets/css/administrative-group.css">
+  <link rel="stylesheet" href="Assets/css/blog.css">
+  <link rel="stylesheet" href="Assets/css/contact.css">
+  <link rel="stylesheet" href="Assets/css/appreciation.css">
+  <link rel="stylesheet" href="Assets/css/enquiry.css">
+  <link rel="stylesheet" href="Assets/css/component.css">
+  <link rel="stylesheet" href="Assets/css/footer.css">
+  <link rel="stylesheet" href="Assets/css/testimonial.css">
+  <link rel="stylesheet" href="Assets/css/video.css">
+  <link rel="stylesheet" href="Assets/css/resource.css">
+  <link rel="stylesheet" href="Assets/css/index.css">
+  <link rel="stylesheet" href="Assets/css/product.css">
+  <link rel="stylesheet" href="Assets/css/image.css">
+  <link rel="stylesheet" href="Assets/css/about.css">
+  <link rel="stylesheet" href="Assets/css/administrative-group.css">
 
-  
+
   <!-- ------------- title of the page----------- -->
   <title>SAT</title>
   <!-- -------------import the font----------- -->

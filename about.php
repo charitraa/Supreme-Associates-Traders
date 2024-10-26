@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include "./head.php"?>
+<?php include "./head.php" ?>
+
 <body>
-  <?php include "./navbar.php"?>
+  <?php include "./navbar.php" ?>
   <div class="about">
     <div class="about-container">
       <div class="left">
@@ -145,7 +146,7 @@
       </div>
     </div>
   </section>
-  <script src="../Assets/js/component.js"></script>
+  <script src="Assets/js/component.js"></script>
 </body>
 
 </html>

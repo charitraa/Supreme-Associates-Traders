@@ -215,7 +215,7 @@
       </div>
     </div>
   </section>
-  <script src="../Assets/js/component.js"></script>
+  <script src="Assets/js/component.js"></script>
 </body>
 
 </html>

@@ -666,8 +666,8 @@
     </div>
   </section>
   <!------------------------- footer end here ------ -->
-  <script src="../Assets/js/component.js"></script>
-  <script src="../Assets/js/index.js"></script>
+  <script src="Assets/js/component.js"></script>
+  <script src="Assets/js/index.js"></script>
 </body>
 
 
