@@ -21,7 +21,7 @@
           <a href="#treatment">Treatment</a>
           <a href="#removal">Removal</a>
           <a href="#system">System</a>
-          <a href="#component">Component</a>
+          <a href="./water-treatment-component.html">Component</a>
         </div>
       </div>
       <div class="dropdown">
