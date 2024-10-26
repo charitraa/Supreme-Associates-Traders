@@ -1,22 +1,22 @@
   <div class="navbar">
     <div class="logo">
-      <a href="./index.php">
+      <a href="./index.html">
         <img src="image/logo.png" alt="Logo" height="67px" width="129px">
       </a>
     </div>
     <div class="menus">
-      <a href="./index.php">Home</a>
+      <a href="./index.html">Home</a>
       <div class="dropdown">
         <a href="javascript:;" class="dropbtn">About <i class="fa fa-chevron-down"></i></a>
         <div class="dropdown-content">
-          <a href="./about.php">About Us</a>
-          <a href="./administrative-group.php">Our Teams</a>
-          <a href="./appreciation.php">Appreciation Letter</a>
-          <a href="./testimonial.php">Testimonial</a>
+          <a href="./about.html">About Us</a>
+          <a href="./administrative-group.html">Our Teams</a>
+          <a href="./appreciation.html">Appreciation Letter</a>
+          <a href="./testimonial.html">Testimonial</a>
         </div>
       </div>
       <div class="dropdown">
-        <a href="./product.php" class="dropbtn">Product <i class="fa fa-chevron-down"></i></a>
+        <a href="./product.html" class="dropbtn">Product <i class="fa fa-chevron-down"></i></a>
         <div class="dropdown-content">
           <a href="#treatment">Treatment</a>
           <a href="#removal">Removal</a>
@@ -27,18 +27,18 @@
       <div class="dropdown">
         <a href="javascript:;" class="dropbtn">Gallery <i class="fa fa-chevron-down"></i></a>
         <div class="dropdown-content">
-          <a href="./image.php">Photos</a>
-          <a href="./video.php">Videos</a>
+          <a href="./image.html">Photos</a>
+          <a href="./video.html">Videos</a>
         </div>
       </div>
-      <a href="./blog.php">Blog</a>
-      <a href="./clients.php">Our Clients</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./clients.html">Our Clients</a>
       <a href="#partner">Partners</a>
-      <a href="./resource.php">Resources</a>
-      <a href="./contact.php">Contact</a>
+      <a href="./resource.html">Resources</a>
+      <a href="./contact.html">Contact</a>
     </div>
     <div class="btn">
-      <a href="./enquiry-form.php" class="enquiry">Enquiry</a>
+      <a href="./enquiry-form.html" class="enquiry">Enquiry</a>
     </div>
     <div class="menu-icon">
       <i class="fa fa-bars"></i>
