@@ -11,7 +11,7 @@
 }
 
 .testimonial .testimonial-container  .paragraph {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #555;
 }
 
@@ -106,16 +106,6 @@ select {
 	margin: 0;
 }
 
-html {
-	font-size: 12px;
-}
-
-body {
-	color: #000;
-	font-family: "Shippori Antique", sans-serif;
-	height: 100vh;
-}
-
 .content-wrapper {
 	height: 100%;
 	width: 70%;
@@ -164,23 +154,6 @@ h1 {
 	height: 250px;
 	position: absolute;
 	top: 12%;
-}
-
-#imgDiv::after {
-	content: "''";
-	font-size: calc(2rem + 2vmin);
-	font-family: sans-serif;
-	line-height: 150%;
-	color: #fff;
-	display: grid;
-	place-items: center;
-	border-radius: 50%;
-	background-color: rgb(79, 143, 226);
-	position: absolute;
-	top: 10%;
-	left: -10%;
-	width: calc(2rem + 2vmin);
-	height: calc(2rem + 2vmin);
 }
 
 #personName {
