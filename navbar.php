@@ -26,7 +26,7 @@
       </div>
       <div class="dropdown">
         <a href="javascript:;" class="dropbtn">Gallery <i class="fa fa-chevron-down"></i></a>
-        <div class="dropdown-content">
+        <div class="dropdown-gallery-content">
           <a href="./image.html">Photos</a>
           <a href="./video.html">Videos</a>
         </div>
