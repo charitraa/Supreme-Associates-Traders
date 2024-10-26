@@ -158,9 +158,6 @@
   justify-content: center;
 }
 
-.home .counter-container img {
-  object-fit: cover;
-}
 
 .home .district, .home .install, .home .customer, .home .project {
   display: flex;
