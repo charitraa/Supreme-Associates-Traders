@@ -37,7 +37,11 @@ const images = [
   "image/images/Untitled-1-2.jpg",
   "image/images/videoframe_5499.png",
   "image/images/WhatsApp-Image-2023-05-23-at-11.50.06-576x1024.jpeg",
-  "image/images/WhatsApp-Image-2023-05-23-at-17.40.39-768x1024.jpeg"
+  "image/images/WhatsApp-Image-2023-05-23-at-17.40.39-768x1024.jpeg",
+  "image/images/IMG_4423.JPG",
+  "image/images/IMG_4513.JPG",
+  "image/images/IMG_4560.JPG",
+  "image/images/IMG_4567.JPG",
 ];
 
 // Add images dynamically to the gallery
