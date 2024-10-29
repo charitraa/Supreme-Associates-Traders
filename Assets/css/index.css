@@ -41,6 +41,9 @@
   .home .slider-container img {
     height: auto; /* Ensure image maintains aspect ratio */
   }
+  .slider-btn {
+    display: none;
+  }
 }
 
 
