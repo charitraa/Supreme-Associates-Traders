@@ -7,11 +7,25 @@
   <link rel="stylesheet" href="Assets/css/clients.css">
   <link rel="stylesheet" href="Assets/css/component.css">
   <title>Our Clients</title>
+  <script src="https://kit.fontawesome.com/49b6b027f2.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="image/icon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="Supreme Associates Traders, Water-sloving Organization" />
+  <meta name="author" content="SAT" />
+  <meta name="description"
+    content="We are a team of certified water treatment professionals who have been active in the market since 2010 A.D. In the field of water treatment, our key experts have more than 20 years of experience." />
+  <meta property="og:url" content="https://sat.np" />
+  <meta property="og:site_name" content="Supreme Associates Traders" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_us" />
+  <meta property="og:title" content="Supreme Associates Traders" />
+  <meta property="og:description"
+    content="We are a team of certified water treatment professionals who have been active in the market since 2010 A.D. In the field of water treatment, our key experts have more than 20 years of experience" />
 </head>
 
 <body>
   <div class="navbar">
-    <div class="logo"> <a class="active-nav" href="./index.html">
+    <div class="logo"> <a href="./index.html">
         <img src="image/logo.png" alt="Logo" height="67px" width="129px"></a>
     </div>
     <div class="menus">
@@ -56,7 +70,7 @@
         </div>
       </div>
       <a href="./blog.html">Blog</a>
-      <a href="#clients">Our Clients</a>
+      <a class="active-nav" href="./clients.html">Our Clients</a>
       <a href="#partner">Partners</a>
       <a href="./resource.html">Resources</a>
       <a href="./contact.html">Contact</a>
@@ -118,21 +132,15 @@
         </ul>
       </li>
       <li><a href="./blog.html">BLOG</a></li>
-      <li><a href="#">OUR CLIENTS</a></li>
-      <li><a href="#">PARTNERS</a></li>
+      <li><a href="./clients.html">OUR CLIENTS</a></li>
+      <li><a href="./partners.html">PARTNERS</a></li>
       <li><a href="./resource.html">RESOURCES</a></li>
       <li><a href="./contact.html">Contact</a></li>
       <li><a href="./enquiry-form.html">ENROLL NOW</a></li>
     </ul>
   </nav>
-  <h1>Our Partners</h1>
-  <div class="partners">
-    <img src="image/home/availabe.svg" onclick="selectPartnerImage('availabe.svg')" alt="Global">
-    <img src="image/home/cost.svg" onclick="selectPartnerImage('cost.svg')" alt="Seko">
-    <img src="image/home/good.svg" onclick="selectPartnerImage('good.svg')" alt="Daiki Axis">
-    <img src="image/home/idea.svg" onclick="selectPartnerImage('idea.svg')" alt="Initiative">
-    <img src="image/home/Technology (1).svg" onclick="selectPartnerImage('Technology (1).svg')" alt="Akash Blowers">
-  </div>
+  <div id="gallery" class="gallery"></div>
+
   <section class="footer">
     <div class="footer-container">
       <div class="footer-content">
@@ -184,13 +192,9 @@
       </div>
     </div>
   </section>
-  <script>
-    function selectPartnerImage(imageName) {
-      localStorage.setItem('selectedImage', `Assets/image/home/${imageName}`);
-      window.location.href = 'client-display.html';
-    }
-  </script>
+
   <script src="Assets/js/component.js"></script>
+  <script src="Assets/js/clients.js"></script>
 </body>
 
 </html>
