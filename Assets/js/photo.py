@@ -15,7 +15,7 @@ def get_image_names(folder_path):
     return image_names
 
 # Specify the folder containing images
-folder_path = 'image\client'  # Change this to your folder path
+folder_path = 'image\partner'  # Change this to your folder path
 
 # Get the image names
 image_names_array = get_image_names(folder_path)
