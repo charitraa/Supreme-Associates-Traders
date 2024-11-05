@@ -81,7 +81,7 @@ const products = [
     title: "HOT AND COLD SYSTEM",
     description: "Supreme Associates Traders supplies customized hot and cold water dispensing units in various sizes...",
     image: "image/product/14. Hot an Cold System.png",
-    link: "./hot an-cold-system.html"
+    link: "./hot-and-cold-system.html"
   },
   {
     title: "Liquid Chlorine Generator",
