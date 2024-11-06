@@ -44,7 +44,7 @@ const products = [
   {
     title: "REVERSE OSMOSIS SYSTEM SYSTEM",
     description: "In view of Russia\u2019s military action against the Ukrainian people, being concerned about ensuring that European funds...",
-    image: "image/product/7. REVERSE OSMOSIS SYSTEM System.jpg",
+    image: "image/product/7. Reverse Osmosis System.jpg",
     link: "./reverse-osmosis-system.html"
   },
   {
