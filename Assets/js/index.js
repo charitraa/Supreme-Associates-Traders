@@ -1,7 +1,7 @@
 const images = [
   "image/home/great-flip.jpg",
   "image/home/plan-01-scaled.jpg",
-  "image/home/happy-customer.png",
+  "image/home/happy-customer.jpeg",
   "image/home/water_treatment_Component-01-01-scaled.jpg",
 ];
 
