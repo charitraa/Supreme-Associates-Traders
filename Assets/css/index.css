@@ -12,7 +12,12 @@
   height: 650px;
   transition: opacity 1s ease-in-out;
   opacity: 0;
+}
+.style-img{
   object-fit: cover;
+}
+.styles-img{
+  object-fit: contain;
 }
 
  .home .slider-container .active {

@@ -1,8 +1,8 @@
 const images = [
   "image/home/Installed.jpeg",
-  "image/home/plan-01-scaled.jpg",
+  "image/home/program.jpeg",
   "image/home/happy-customer.jpeg",
-  "image/home/water_treatment_Component-01-01-scaled.jpg",
+  "image/home/technology.jpeg",
 ];
 
 let currentIndex = 0;
@@ -25,7 +25,17 @@ function showImage(index) {
 
   // Change the image source immediately
   sliderContainer.src = images[currentIndex];
-  sliderContainer.classList.remove('active');
+
+  // Remove classes before conditionally adding them
+  sliderContainer.classList.remove('active', 'style-img', 'styles-img');
+
+  // Add shared style for the 1st and 3rd images only
+  if (currentIndex === 0 || currentIndex === 2) {
+    sliderContainer.classList.add('style-img'); // Apply style to 1st and 3rd images
+  }
+  if (currentIndex === 1) {
+    sliderContainer.classList.add('styles-img'); // Apply style to 1st and 3rd images
+  }
 
   // Short delay to trigger transition
   setTimeout(() => {
