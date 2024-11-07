@@ -178,6 +178,7 @@
     padding: 10px;
     transition: background 0.3s;
     position: relative;
+    text-transform: uppercase;
 }
 
 .nav-links-mobile a:hover {
@@ -198,6 +199,7 @@
 .dropdown-mobile a {
     font-weight: 500;
     font-size: 14px;
+    text-transform: uppercase;
 }
 
 .show-dropdown-mobile {
