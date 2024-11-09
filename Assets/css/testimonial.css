@@ -1,5 +1,6 @@
 .testimonial {
   padding: 50px;
+	background-color: var(--background);
 }
 
 .testimonial .testimonial-container  .title {

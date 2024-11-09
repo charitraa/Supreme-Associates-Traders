@@ -782,7 +782,9 @@ text-align: center;
 
 
 /* section testimonial */
-
+.testimonials{
+  background-color: var(--background);
+}
 .testimonial {
   padding: 50px;
 }
