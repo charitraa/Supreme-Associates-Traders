@@ -3,19 +3,20 @@
 	background-color: var(--background);
 }
 
-.testimonial .testimonial-container  .title {
+.testimonial .testimonial-container .title {
   font-size: 3rem;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 .testimonial .title {
   font-weight: 700;
 }
 
-.testimonial .testimonial-container  .paragraph {
+.testimonial .testimonial-container .paragraph {
   font-size: 1.5rem;
   color: #555;
+  font-weight: 700;
 }
-
 
 .testimonial .paragraph {
   font-weight: 700;
@@ -46,12 +47,11 @@
   font-size: 3rem;
   color: #333;
   font-weight: bold;
-  margin: 0;
 }
 
 .testimonial .customer-images {
   display: flex;
-  gap: 30px; /* Increased gap between images */
+  gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -62,8 +62,8 @@
   overflow: hidden;
   border-radius: 12px;
   border: 3px solid #ddd;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0 .1);
-  transition: transform 0 .3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 .testimonial .image-wrapper img {
   width: 100%;
@@ -72,10 +72,9 @@
 }
 
 .testimonial .image-wrapper:hover {
-  transform: scale(1 .1) rotate(2deg);
-  transition: transform 0 .3s ease-in-out;
+  transform: scale(1.1) rotate(2deg);
+  transition: transform 0.3s ease-in-out;
 }
-
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
   .testimonial .happy-customer-title h2 {
@@ -86,6 +85,9 @@
     width: 180px;
     height: 100px;
   }
+		.content-wrapper{
+		width: 100%;
+	}
 }
 
 
@@ -269,4 +271,43 @@ h1 {
 	.content-wrapper {
 		width: 100%;
 	}
+	.wrapper-for-arrows{
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 900px) {
+  .testimonial .testimonial-container .title {
+    font-size: 2rem;
+  }
+  .testimonial .happy-customer-title h2 {
+    font-size: 2rem;
+  }
+  .testimonial .image-wrapper {
+    width: 200px;
+    height: 250px;
+  }
+  .testimonial .paragraph {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .testimonial {
+    padding: 30px;
+  }
+
+  .testimonial .title {
+    font-size: 1.5rem;
+  }
+  .testimonial .happy-customer-title h2 {
+    font-size: 1.8rem;
+  }
+  .testimonial .image-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .testimonial .customer-images {
+    flex-direction: column;
+    gap: 15px;
+  }
 }

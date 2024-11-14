@@ -872,8 +872,10 @@ text-align: center;
     width: 180px;
     height: 100px;
   }
+  .testimonial{
+    padding: 20px;
+  }
 }
-
 
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
 
@@ -1047,7 +1049,10 @@ h1 {
 }
 
 @media screen and (max-width: 900px) {
-	.content-wrapper {
+		.content-wrapper {
+		width: 100%;
+	}
+	.wrapper-for-arrows{
 		width: 100%;
 	}
 }
