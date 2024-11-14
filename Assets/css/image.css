@@ -16,12 +16,19 @@
     .gallery {
     grid-template-columns: repeat(3, 1fr);
     }
+    .gallery{
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .gallery {
     grid-template-columns: repeat(2, 1fr);
     }
+    .gallery{
+        padding: 30px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {

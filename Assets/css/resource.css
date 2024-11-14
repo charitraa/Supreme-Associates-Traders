@@ -121,5 +121,6 @@
     .resource .card {
         flex-direction: column;
         align-items: center;
+        gap: 30px;
     }
 }

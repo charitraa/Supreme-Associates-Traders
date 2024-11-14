@@ -33,6 +33,10 @@
     flex-direction: column;
     align-items: center;
   }
+  .video {
+  padding: 0px;
+
+}
   
   .video-play {
     width: 100%;

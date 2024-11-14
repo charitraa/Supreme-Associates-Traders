@@ -18,10 +18,11 @@
   gap: 50px;
 }
 
-.administrative-group .team-image img{
+.administrative-group .team-image img {
   object-fit: cover;
-  width: 1100px;
-  height: 700px;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
 }
 
 .administrative-group .title {
@@ -29,24 +30,29 @@
   font-weight: 700;
 }
 
-
+/* Tablet view */
 @media (max-width: 768px) {
-  .administrative-group .main-container {
+  .administrative-group {
+    padding: 30px;
+  }
+  
+  .administrative-group .title {
+    font-size: 28px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .administrative-group {
     padding: 20px;
   }
 
   .administrative-group .title {
-    font-size: 28px;
-  }
-
-}
-
-@media (max-width: 480px) {
-  .administrative-group .main-container {
-    padding: 10px;
-  }
-  .administrative-group .title {
     font-size: 24px;
   }
-
+  
+  .administrative-group .team-image img {
+    width: 100%;
+    height: auto;
+  }
 }
