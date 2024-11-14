@@ -384,16 +384,16 @@ font-size: 16px;
 }
 
 @media (max-width: 795px) {
-    .blog-page .left {
-      width: 100%;
-    }
-     .blog-page .right {
-      width: 100%;
-    }
-    .blog-page .down .water{
-      width: 100%;
-    }
-    .blog-page .down .water-content{
-      width: 100%;
-    }
+  .blog-page .left {
+    width: 100%;
+  }
+    .blog-page .right {
+    width: 100%;
+  }
+  .blog-page .down .water{
+    width: 100%;
+  }
+  .blog-page .down .water-content{
+    width: 100%;
+  }
 }
