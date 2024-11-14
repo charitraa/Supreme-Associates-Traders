@@ -260,9 +260,7 @@ img{
 
 /* Media query for mobile view */
 @media (max-width: 1200px) {
-  .blog-page .recent-content {
-    gap: 10px;
-  }
+
   .blog-page .building img ,.blog-page .migrating img{
     width: 100%;
   }
@@ -270,7 +268,7 @@ img{
   .blog-page .up {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
   }
 
   .blog-page .down {
@@ -278,19 +276,26 @@ img{
     align-items: center;
     gap: 10px;
   }
-
+  .up .left img{
+    width: 100%;
+  }
   .blog-page .left{
     width: 100%;
-    align-items: center;
     gap: 10px;
   }
   .blog-page .water-content {
     width: 720px;
     gap: 10px;
   }
+  .blog-page .recent-container{
+    padding: 20px;
+  }
 
   .blog-page .migrating-content,
   .blog-page .building-content {
+    width: 100%;
+  }
+  .down .water img{
     width: 100%;
   }
 
@@ -376,4 +381,19 @@ font-size: 14px;
 .blog-page .news-contentbtn {
 font-size: 16px;
 }
+}
+
+@media (max-width: 795px) {
+    .blog-page .left {
+      width: 100%;
+    }
+     .blog-page .right {
+      width: 100%;
+    }
+    .blog-page .down .water{
+      width: 100%;
+    }
+    .blog-page .down .water-content{
+      width: 100%;
+    }
 }
