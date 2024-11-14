@@ -344,3 +344,6 @@
   }
 }
 
+.gallery{
+  background-color: var(--background);
+}

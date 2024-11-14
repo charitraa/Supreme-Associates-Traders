@@ -1,5 +1,5 @@
 .blog-describe .container {
-    background-color: white;
+    background-color:var(--background);
     padding: 20px;
     border-radius: 8px;
     max-width: 950px;
@@ -8,7 +8,12 @@
     flex-direction: column;
     gap: 20px;
 }
-
+.blog-describe{
+    background-color: var(--background);
+}
+body{
+    background-color: var(--background);
+}
 .blog-describe .title {
     font-size: 32px;
     font-weight: bold;
