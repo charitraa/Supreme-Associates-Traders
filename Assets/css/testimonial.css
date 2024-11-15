@@ -293,7 +293,7 @@ h1 {
 }
 @media (max-width: 600px) {
   .testimonial {
-    padding: 30px;
+    padding: 20px;
   }
 
   .testimonial .title {
