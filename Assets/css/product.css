@@ -1,6 +1,6 @@
 .newss {
 height: auto;
-background: white;
+background: var(--background);
 padding: 50px 20px;
 }
 
