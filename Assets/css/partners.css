@@ -9,8 +9,14 @@
   width: 100%;
   height: auto;
   object-fit: contain;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect */
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
 /* Large screens (up to 1200px) */
 @media screen and (max-width: 1200px) {
   .gallery {
